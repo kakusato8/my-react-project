@@ -50,7 +50,7 @@ const initialLessons: Lesson[] = [
 ]
 
 function LearningMode() {
-  const [lessons, setLessons] = useState<Lesson[]>(initialLessons)
+  const [lessons] = useState<Lesson[]>(initialLessons)
   const [selectedLesson, setSelectedLesson] = useState<Lesson | null>(lessons[0])
   const [currentExercise, setCurrentExercise] = useState<Exercise | null>(lessons[0]?.exercises[0] || null)
   const [userRegex, setUserRegex] = useState('')
@@ -71,7 +71,7 @@ function LearningMode() {
       } else {
         setFeedback('マッチしませんでした。もう一度試してください。')
       }
-    } catch (error) {
+    } catch {
       setFeedback('無効な正規表現です。構文を確認してください。')
     }
   }
