@@ -716,3 +716,201 @@ html, body {
     gap: 1.5rem;
   }
 }
+
+/* 学習モード - タブとセクション */
+.mode-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  color: #666;
+  font-weight: 500;
+}
+
+.tab-button:hover {
+  color: #333;
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.tab-button.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+  background: rgba(102, 126, 234, 0.1);
+}
+
+/* 理論セクション */
+.theory-section {
+  padding: 2rem 0;
+  max-width: 800px;
+}
+
+.theory-content {
+  margin-bottom: 2rem;
+}
+
+.theory-content h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.theory-text p {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.theory-text p:empty {
+  margin-bottom: 0.4rem;
+}
+
+/* 具体例セクション */
+.examples-section {
+  margin-bottom: 2rem;
+}
+
+.examples-section h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.example-item {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.example-pattern {
+  margin-bottom: 0.5rem;
+}
+
+.example-pattern code {
+  background: #e9ecef;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: #d63384;
+  font-weight: bold;
+}
+
+.example-text {
+  margin-bottom: 0.5rem;
+}
+
+.text-sample {
+  background: #fff3cd;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.example-explanation {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.example-matches {
+  margin-top: 0.5rem;
+}
+
+.match-result {
+  background: #d1ecf1;
+  color: #0c5460;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+/* 重要ポイントセクション */
+.key-points-section {
+  margin-bottom: 2rem;
+}
+
+.key-points-section h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.key-points-list {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  list-style: none;
+}
+
+.key-points-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.key-points-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.key-points-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* ボタンスタイル */
+.next-step-button {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.primary-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+.primary-button:hover {
+  background: #5a67d8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.secondary-button {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondary-button:hover {
+  background: #5a6268;
+}
